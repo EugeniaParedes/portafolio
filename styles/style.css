@@ -17,7 +17,7 @@ body{
     position: fixed;
     top:0;
     width: 100%;
-    height: 85px;
+    height: 90px;
     background-color: aqua;
     display: flex;
     justify-content: flex-end;
@@ -25,6 +25,7 @@ body{
     list-style: none;
     color: black;
     padding-right: 100px;
+    box-shadow: 0px 15px 15px -3px rgba(160, 160, 160, 0.75)  ;
 }
 .imgPrincipal {
     filter: drop-shadow(2px 5px 20px #4c456d);
@@ -86,7 +87,7 @@ a:hover{
     height: 600px;
     background-color:violet;
     padding-left: 10%;
-    padding-top: 150px;
+    padding-top: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -99,21 +100,36 @@ a:hover{
     width: 100%;
     /*height: 1000px;*/
     background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
 }
-.paddingTitulos{
+.proyectos{
+    width: 100%;
+    /*height: 1000px;*/
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+}
+/*.paddingTitulos{
     padding-top: 50px;
     padding-left: 400px;
 }
 .loremConocimientos{
     padding-left: 200px;
-    padding-bottom: 70px;
-}
+    padding-bottom: 70px;*/
+
 .contenedorCards{
     width: 1000px;
     height: 600px;
     background-color: yellow;
-    margin-left: 185px;
-    /*margin-top: 70px;*/
+    /*margin-left: 185px;*/
+    margin-top: 70px;
     padding: 50px;
     display: flex;
     justify-content: space-evenly;
@@ -201,16 +217,6 @@ p{
 a{
     text-decoration: none;
     color: black;
-}
-.proyectos{
-    width: 100%;
-    /*height: 1000px;*/
-    background-color: grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 60px;
 }
 .tituloProyectos{
     text-align: center;
