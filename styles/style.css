@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: "Nunito";
 }
+:root{
+    scroll-behavior: smooth;
+}
 body{
     width: 100vw;
 }
@@ -12,7 +15,7 @@ body{
     height: 100vh;
     width: 100%;
 }
-
+/* HEADER */
 .containerHeader {
     position: fixed;
     top:0;
@@ -26,28 +29,12 @@ body{
     color: black;
     padding-right: 100px;
     box-shadow: 0px 15px 15px -3px rgba(160, 160, 160, 0.75)  ;
+    z-index: 1;
 }
-.imgPrincipal {
-    filter: drop-shadow(2px 5px 20px #4c456d);
-    transition-duration: 0.6s;
-}
-.imgPrincipal:hover{
-    transform: scale(1.2);
-    transition-duration: 0.6s;
-}
-
 .caja{
     font-size: 20px;
     padding: 15px;
     padding-right: 20px;
-}
-.cajaloquehago{
-    font-size: 20px;
-    padding: 12px;
-    background-color: white;
-    margin-top: 100px;
-    border-radius: 40px;
-    
 }
 .cajacontacto{
     font-size: 20px;
@@ -58,7 +45,7 @@ body{
 }
 .botonConEfecto:active {
     padding: 5px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 20px;
     box-shadow: 0px 0px 5px 5px violet;
 }
@@ -68,20 +55,10 @@ a:active{
 a:hover{
     color: violet;
 }
-.card:hover{
-    color: violet;
-    padding: 5px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0px 0px 5px 5px violet;
-}
-.cardProyectos:hover{
-    color: violet;
-    padding: 5px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0px 0px 5px 5px violet;
-}
+
+
+/* MAIN */
+
 .containerCaratula{
     width: 100%;
     height: 600px;
@@ -93,12 +70,32 @@ a:hover{
     align-items: center;
     text-align: center;
 }
+.cajaloquehago{
+    font-size: 20px;
+    padding: 12px;
+    background-color: white;
+    margin-top: 100px;
+    border-radius: 40px;
+}
+.sombra{
+    filter: drop-shadow(2px 5px 5px #4c456d);
+}
 .imagen1{
     padding-left: 200px;
 }
+.imgPrincipal {
+    filter: drop-shadow(2px 5px 20px #4c456d);
+    transition-duration: 0.6s;
+}
+.imgPrincipal:hover{
+    transform: scale(1.2);
+    transition-duration: 0.6s;
+}
+
+/* SECCIÓN MIS CONOCIMIENTOS */
+
 .misConocimientos{
     width: 100%;
-    /*height: 1000px;*/
     background-color: cadetblue;
     display: flex;
     flex-direction: column;
@@ -106,36 +103,15 @@ a:hover{
     align-items: center;
     padding: 90px;
 }
-.proyectos{
-    width: 100%;
-    /*height: 1000px;*/
-    background-color: grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 90px;
-}
-/*.paddingTitulos{
-    padding-top: 50px;
-    padding-left: 400px;
-}
-.loremConocimientos{
-    padding-left: 200px;
-    padding-bottom: 70px;*/
-
 .contenedorCards{
     width: 1000px;
     height: 600px;
     background-color: yellow;
-    /*margin-left: 185px;*/
     margin-top: 70px;
     padding: 50px;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    
-    
+    flex-wrap: wrap;   
 }
 .card{
     height: 225px;
@@ -144,7 +120,7 @@ a:hover{
     border: 1px solid black;
     border-radius: 10px;
 }
-i{
+.iCards{
     font-size: 80px;
     padding-left: 95px;
     padding-top: 40px;
@@ -173,6 +149,18 @@ h4{
 .GIT{
     color: orange;
 }
+
+.card:hover{
+    color: violet;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px violet;
+}
+
+
+/* CITA */
+
 .citaContainer{
     height: 400px;
     width: 100%;
@@ -182,11 +170,7 @@ h4{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
 }
-/*.cita{
-    
-}*/
 .lorem1{
     text-align: center;
     display: flex;
@@ -195,12 +179,65 @@ h4{
     align-items: center;
     padding-bottom: 100px;
     padding-top: 100px;
-
 }
 .iconoCita{
     padding-right: 100px;
     padding-bottom: 10px;
 }
+
+/* SECCIÓN PROYECTOS */
+
+.proyectos{
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+}
+.proyectosContainer{
+    width: 1100px;
+    height: 1100px;
+    background-color: yellow;
+    margin-top: 70px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cardProyectos{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imgcards{
+    height: 290px;
+    width: 290px;
+    padding-top: 120px;
+}
+.h4proyectos{
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    padding-bottom: 120px;
+} 
+.cardProyectos:hover{
+    color: violet;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px violet;
+}
+
+/* GENERALES */
 h1 {
     font-size: 60px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -218,46 +255,252 @@ a{
     text-decoration: none;
     color: black;
 }
-.tituloProyectos{
-    text-align: center;
-}
-.loremProyectos{
-    text-align: center;
-    padding-bottom: 70px;
-}
 
-.proyectosContainer{
-    width: 1100px;
-    height: 1100px;
-    background-color: yellow;
-    /*margin-left: 130px;
-    /*margin-top: 70px;*/
-    padding: 50px;
+/*CONTACTO */
+
+.contacto{
+    width: 100%;
+    background-color: tomato;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.cardProyectos{
-    height: 300px;
-    width: 300px;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+}
+.contenedorContacto{
+    width: 90%;
+    height: 600px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    margin: 10%;
+    padding: 25px;
+}
+.contenedorContactame{
+    width: 50%;
+    height: 100%;
+    margin-left: 20px;
+    
+}
+.listaRedes{
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    
+}
+.estiloIcono{
+    color: violet;
+    background-color: transparent;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+.iconoMail{
+    width: 385px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icono{
+    width: 230px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.iconoMargin{
+    margin-left: 30px;
+}
+li:hover .estiloIcono{
+    background-color: violet;
+    color: white;
+}
+.icono:active{
+    box-shadow: -2px -1px 15px 0px violet;
+    border-color: 1px violet;
+}
+.iconoMail:active{
+    box-shadow: -2px -1px 15px 0px violet;
+    border-color: 1px violet;
+}
+
+/* Formulario */
+
+.contenedorEscribime{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
 }
-.imgcards{
-    height: 290px;
-    width: 290px;
-    padding-top: 120px;
+.containerFormulario{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
 }
-.h4proyectos{
-    text-align: center;
-    font-family: cursive;
+.nombre{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px;
+}
+.apellido{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 10px;
+}
+.input{
+    border-radius: 30px;
+    width: 100%;
+    padding: 4%;
+    margin-top: 2%;
+    outline: none;
+    border: transparent;
+    background-color: gainsboro;
+}
+.email{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.mensaje{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.inputMail{
+    width: 100%;
+    border-radius: 30px;
+    padding: 2%;
+    outline: none;
+    border: transparent;
+    margin-top: 2%;
+    background-color: gainsboro;
+}
+textarea{
+    width: 96%;
+    border-radius: 20px;
+    padding: 2%;
+    font-family: "inconsolata";
+    margin-top: 2%;
+    outline: none;
+    border: transparent;
+    background-color: gainsboro;
+}
+button{
+    font-size: 18px;
+    width: 120px;
+    height: 50px;
+    background-color:violet;
+    color: white;
+    border-radius: 30px;
+    border: transparent;
+    margin: 10px;
+}
+.pContactame{
     font-size: 20px;
-    padding-bottom: 120px;
-} 
+    width: 90%;
+}
+button:hover{
+    background-color: white;
+    color: violet;
+}
+input:focus{
+    box-shadow: -2px -1px 15px 0px violet;
+}
+textarea:focus{
+    box-shadow: -2px -1px 15px 0px violet;
+}
+
+
+/*FOOTER*/
+footer{
+    height: 300px;
+    width: 100%;
+    background-color: cadetblue;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenedorFooter{
+    height: 250px;
+    width: 600px;
+    background-color:cadetblue;
+    padding: 20px;
+    
+}
+.ulFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 17px;
+    padding: 10px;
+}
+.iconosFooter{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+.paddingFooter{
+    padding: 15px;
+
+}
+.estiloIconoF{
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background-color: white;
+    color: violet;
+    padding: 10px;
+    
+}
+.paddingIcono{
+    padding: 5px;
+}
+.p-footer{
+    text-align: center;
+    color:#6c757d;
+    font-size: 20px;
+}
+.iFooter{
+    font-size: 10px;
+}
+.estiloIconoF:hover{
+    background-color: violet;
+    color: white;
+    border: 1px solid white;
+}
+
+/* RESPONSIVE */

@@ -27,10 +27,10 @@
     <a name="hola"></a>
         <main class="containerCaratula">
             <div > 
-            <h2>Hola! soy</h2>
-            <h1>Eugenia Paredes</h1>
-            <p>Desarrolladora web en proceso</p>
-            <p><span class="cajaloquehago botonConEfecto"><a href="#loquehago">LO QUE HAGO</a></p>
+            <h2 class="sombra">Hola! soy</h2>
+            <h1 class="sombra">Eugenia Paredes</h1>
+            <p class="sombra">Desarrolladora web en proceso</p>
+            <p><span class="cajaloquehago botonConEfecto"><a href="#loquehago">LO QUE HAGO</a></span></p>
             </div>
             <div class="imagen1">
             <img class="imgPrincipal" src="./assets/images/undraw_online_resume_re_ru7s.svg"
@@ -40,48 +40,46 @@
     
         <a name="conocimientos"></a>
             <div class="misConocimientos">
-                <h1 class="paddingTitulos">Mis conocimientos</h1>
-                <p class="loremConocimientos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sint beatae tempore iste, veniam illo.</p>
+                <h1>Mis conocimientos</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sint beatae tempore iste, veniam illo.</p>
             
                 <div class="contenedorCards">
                     <div class="card">
-                        <i class="fab fa-html5 html"></i>
+                        <i class="fab fa-html5 html iCards"></i>
                         <h4>HTML 5</h4>
                     </div>
                     <div class="card">
-                        <i class="fab fa-css3-alt css"></i>
+                        <i class="fab fa-css3-alt css iCards"></i>
                         <h4>CSS 3</h4>
                     </div>
                     <div class="card">
-                        <i class="fab fa-sass sass"></i>
+                        <i class="fab fa-sass sass iCards"></i>
                         <h4>Sass</h4>
                     </div>
                     <div class="card">
-                        <i class="fab fa-js JS"></i>
+                        <i class="fab fa-js JS iCards"></i>
                         <h4>JavaScript</h4>
                     </div>
                     <div class="card">
-                        <i class="fab fa-react REACT"></i>
+                        <i class="fab fa-react REACT iCards"></i>
                         <h4>React</h4>
                     </div>
                     <div class="card">
-                        <i class="fab fa-git-alt GIT"></i>
+                        <i class="fab fa-git-alt GIT iCards"></i>
                         <h4>GIT</h4>
                     </div>
-                    
-
                 </div>
             </div>
 
             <section class="citaContainer">
-                <i class="fas fa-quote-right iconoCita"></i>
+                <i class="fas fa-quote-right iconoCita iCards"></i>
                 <p class="lorem1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur magnam necessitatibus exercitationem </p>
         </section>
 
         <a name="proyectos"></a>
         <a name="loquehago"></a>
         <section class="proyectos">
-            <h1 class="tituloProyectos">Mis proyectos</h1>
+            <h1>Mis proyectos</h1>
             <p class="loremProyectos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ea iste maxime sapiente molestias</p>
             <div class="proyectosContainer">
                 <div class="cardProyectos">
@@ -119,15 +117,86 @@
                     <a href=" " target="_blank"></a>
                     <img class="imgcards" src="assets/images/undraw_movie_night_fldd.svg" alt="Buscador de peliculas">
                     <h4 class="h4proyectos">Buscador de peliculas</h4>
-                </div>
-
-            
-            
+                </div>            
             </div>
         </section>
-        
+
+        <a name="contacto"></a>
+        <section class="contacto">
+            <div class="contenedorContacto">
+                <div class="contenedorContactame">
+                    <h1>Contactame</h1>
+                    <p class="pContactame">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat consectetur, quidem eius aspernatur, eligendi cupiditate sit esse iure in optio explicabo. Animi commodi eum dolorem, adipisci incidunt.</p>
+
+                    <ul class="listaRedes">
+                        <li class="icono"><i class="fab fa-twitter estiloIcono"></i><a href target="blank"><span class="iconoMargin">@EugeParedes</span></a></li>
+                        <li class="icono"><i class="fab fa-github-alt estiloIcono"></i><a href target="blank"><span class="iconoMargin">EugeniaParedes</span></a></li>
+                        <li class="icono"><i class="fab fa-linkedin-in estiloIcono"></i><a href target="blank"><span class="iconoMargin">EugeniaParedes</span></a></li>
+                        <li class="iconoMail"><i class="fas fa-envelope estiloIcono"></i><a href target="blank"><span class="iconoMargin">eugenia.paredes182@gmail.com</span></a></li> 
+                    </ul>
+
+                </div>
+
+                <div class="contenedorEscribime">
+                    <h1>Escribime</h1>
+ 
+                    <form action="">
+                        <div class="containerFormulario">
+                            <div class="nombre">
+                                <label for="idNombre">Nombre*</label>
+                                <input class="input" type="text" id="idNombre"
+                                maxlength="10"  
+                                size="10"
+                            placeholder="p. ej.: Eugenia">
+                            </div>
+                            <div class="apellido">
+                                <label for="idApellido">Apellido*</label>
+                                <input class="input" type="text" id="idApellido" maxlength="10"  
+                                size="10"
+                                placeholder="p. ej.: Paredes">
+                            </div>
+                        </div>   
+
+                        <div class="email">
+                            <label for="idEmail">Email*</label>
+                            <input class="inputMail" type="email" maxlength="30" size="50" placeholder="p.ej.: eugenia.paredes@gmail.com">
+                        </div>
+
+                        <div class="mensaje">
+                            <label for="idMensaje">Mensaje*</label>
+                            <textarea name="Mensaje" id="idMensaje" cols="20" rows="7" placeholder=" Escriba un mensaje aqui"></textarea>
+                        </div>
+
+                    </form>
+                    <button class="m10">Enviar</button>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="contenedorFooter">
+            <ul class="ulFooter"> 
+                <li><a class="paddingFooter" href="#hola">HOLA</a></li>
+                <li><a class="paddingFooter" href="#conocimientos">CONOCIMIENTOS</a></li>
+                <li><a class="paddingFooter" href="#proyectos">PROYECTOS</a></li>
+                <li><a class="paddingFooter" href="#contacto">CONTACTO</a></li>
+            </ul>
 
 
+            <ul class="iconosFooter">
+                <li><i class="fab fa-twitter estiloIconoF"></i><a class="paddingIcono" href target="blank"></li>
+                <li><i class="fab fa-github-alt estiloIconoF"></i><a class="paddingIcono" href target="blank"></li>
+                <li><i class="fab fa-linkedin-in estiloIconoF"></i><a class="paddingIcono" href target="blank"></li>
+                <li><i class="fas fa-envelope estiloIconoF"></i><a class="paddingIcono" href target="blank"></a></li> 
+            </ul>
+
+            <p class="p-footer">Hecho con <i class="far fa-heart iFotter"></i> por EugeParedes</p>
+
+
+
+            </div>
+        </footer>
         
 
 
