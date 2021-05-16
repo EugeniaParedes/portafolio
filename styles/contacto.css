@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito";
+}
+
+.contacto{
+    width: 100%;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorContacto{
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    margin: 10%;
+    padding: 25px;
+}
+.contenedorContactame{
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+    
+}
+.listaRedes{
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    /*padding-right: 10px;*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+}
+.estiloIcono{
+    color: violet;
+    background-color: transparent;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+.iconoMail{
+    width: 385px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icono{
+    width: 230px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.iconoMargin{
+    margin-left: 30px;
+}
+li:hover .estiloIcono{
+    background-color: violet;
+    color: white;
+}
+.icono:active{
+    box-shadow: -2px -1px 15px 0px violet;
+    border-color: 1px violet;
+}
+.iconoMail:active{
+    box-shadow: -2px -1px 15px 0px violet;
+    border-color: 1px violet;
+}
+
+/* Formulario */
+
+.contenedorEscribime{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px;
+
+}
+.containerFormulario{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+}
+.nombre{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px;
+}
+.apellido{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 10px;
+}
+.input{
+    border-radius: 30px;
+    width: 100%;
+    padding: 4%;
+    margin-top: 2%;
+    outline: none;
+    border: transparent;
+    background-color: gainsboro;
+}
+.email{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.mensaje{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.inputMail{
+    width: 100%;
+    border-radius: 30px;
+    padding: 2%;
+    outline: none;
+    border: transparent;
+    margin-top: 2%;
+    background-color: gainsboro;
+}
+textarea{
+    width: 96%;
+    border-radius: 20px;
+    padding: 2%;
+    font-family: "inconsolata";
+    margin-top: 2%;
+    outline: none;
+    border: transparent;
+    background-color: gainsboro;
+}
+button{
+    font-size: 18px;
+    width: 120px;
+    height: 50px;
+    background-color:violet;
+    color: white;
+    border-radius: 30px;
+    border: transparent;
+    margin: 10px;
+}
+.pContactame{
+    font-size: 20px;
+    width: 90%;
+}
+button:hover{
+    background-color: white;
+    color: violet;
+}
+input:focus{
+    box-shadow: -2px -1px 15px 0px violet;
+}
+textarea:focus{
+    box-shadow: -2px -1px 15px 0px violet;
+}

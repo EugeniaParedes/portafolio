@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito";
+}
+
+.misConocimientos{
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+}
+.contenedorCards{
+    width: 85%;
+    height: 600px;
+    background-color: whitesmoke;
+    margin-top: 70px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;   
+}
+.card{
+    height: 225px;
+    width: 260px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+.iCards{
+    font-size: 80px;
+    padding: 15% ;
+}
+h4{
+    font-size: 20px;
+}
+.html{
+    color: orange;
+}
+.css{
+    color: blue;
+}
+.sass{
+    color: violet;
+}
+.JS{
+    color: yellow;
+}
+.REACT{
+    color: darkcyan;
+}
+.GIT{
+    color: orange;
+}
+
+.card:hover{
+    color: violet;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px violet;
+}
